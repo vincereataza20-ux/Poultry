@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4ec" />
+    <meta name="description" content="Meet the happy, healthy hens raised with care at Meadow & Cluck Farm." />
+    <title>Meadow & Cluck — Happy hens, raised with care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">A little more sunshine, a lot more happy hens. <span>Local pickup & farm delivery available</span></div>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Meadow and Cluck home">
+        <span class="brand-mark" aria-hidden="true">M<span>&</span>C</span>
+        <span class="brand-name">meadow <i>&</i> cluck</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#our-hens">Our hens</a>
+        <a href="#our-way">Our way</a>
+        <a href="#visit">Visit the farm</a>
+      </nav>
+      <div class="header-actions">
+        <button class="text-button admin-trigger" id="admin-trigger" type="button">Farm admin</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="sun-icon">✳</span> Grown on good days</span>
+          <h1 id="hero-title">Good hens.<br /><em>Good things.</em></h1>
+          <p>Meet your next happy hen. Our curious, healthy girls are raised slowly, outdoors, and always with a little extra love.</p>
+          <a class="button button-dark" href="#our-hens">Meet the flock <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span class="note-icon">♡</span><span>Raised with care, from our little farm<br />to your happy home.</span></div>
+        </div>
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1300&q=85" alt="A flock of healthy hens enjoying the outdoors" />
+          <div class="image-sticker"><span>FRESH<br />FROM THE<br />FARM</span><b>✳</b></div>
+          <div class="image-caption"><span class="caption-dot"></span> OUTDOOR RAISED <span>·</span> HAPPY & HEALTHY</div>
+        </div>
+        <div class="hero-scribble" aria-hidden="true">✳</div>
+      </section>
+
+      <section class="values-strip" id="our-way" aria-label="Our farm values">
+        <div><span class="value-icon">☼</span><span>Room to roam</span></div>
+        <div><span class="value-icon">♡</span><span>Raised with care</span></div>
+        <div><span class="value-icon">✳</span><span>Healthy, happy hens</span></div>
+        <div><span class="value-icon">⌂</span><span>Local farm pickup</span></div>
+      </section>
+
+      <section class="hens-section" id="our-hens">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">A flock for every farm</span>
+            <h2>Find your <em>feathered friend.</em></h2>
+          </div>
+          <p>Every hen has a story. Find the right age and personality for your backyard.</p>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter chickens by age">
+            <button class="filter-chip active" data-filter="all" type="button">All hens <span id="all-count"></span></button>
+            <button class="filter-chip" data-filter="4" type="button">4 months</button>
+            <button class="filter-chip" data-filter="5" type="button">5 months</button>
+            <button class="filter-chip" data-filter="6" type="button">6+ months</button>
+          </div>
+          <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="search-input" type="search" placeholder="Find a breed..." aria-label="Search chicken breeds" /></label>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>No hens found just now. Try another age or search.</div>
+      </section>
+
+      <section class="farm-story" id="visit">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1000&q=85" alt="Our hens spending a sunny day outside" loading="lazy" />
+          <span class="story-tag">A little patch of happy</span>
+        </div>
+        <div class="story-copy">
+          <span class="eyebrow">A kinder kind of chicken farm</span>
+          <h2>Room to roam.<br /><em>Space to be hens.</em></h2>
+          <p>At Meadow & Cluck, good things take time. Our girls get fresh pasture, cozy shelter, and all the care they need to grow into confident, healthy hens.</p>
+          <a class="underlined-link" href="#our-hens">Get to know the flock <span>→</span></a>
+          <div class="story-signoff"><span class="signature">With love,</span><span>The Meadow & Cluck family</span></div>
+        </div>
+      </section>
+      <section class="visit-banner">
+        <span class="visit-flower">✳</span>
+        <div><span class="eyebrow">Come say hello</span><h2>Your happy hen is waiting.</h2></div>
+        <a class="button button-light" href="mailto:hello@meadowandcluck.com">Plan a farm visit <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#"><span class="brand-mark">M<span>&</span>C</span><span class="brand-name">meadow <i>&</i> cluck</span></a>
+      <p>Good hens, raised with care.<br />A small farm with a big heart.</p>
+      <span class="copyright">© 2025 Meadow & Cluck Farm</span>
+    </footer>
+
+    <div class="modal-backdrop" id="modal-backdrop" hidden>
+      <section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close product details">×</button>
+        <div id="modal-content"></div>
+      </section>
+    </div>
+
+    <section class="admin-panel" id="admin-panel" aria-labelledby="admin-title" hidden>
+      <div class="admin-heading"><div><span class="eyebrow">The behind-the-barn view</span><h2 id="admin-title">Flock <em>manager.</em></h2></div><button class="admin-close" id="admin-close" type="button" aria-label="Close farm admin">×</button></div>
+      <div class="admin-stats" id="admin-stats"></div>
+      <div class="admin-layout">
+        <form class="admin-form" id="product-form">
+          <h3 id="form-heading">Add a hen</h3>
+          <input type="hidden" id="edit-id" />
+          <label>Hen's name<input id="form-name" required maxlength="60" placeholder="e.g. Marigold" /></label>
+          <div class="form-row">
+            <label>Breed<input id="form-breed" required maxlength="60" placeholder="e.g. Buff Orpington" /></label>
+            <label>Age (months)<input id="form-age" type="number" min="4" step="1" required value="4" /></label>
+          </div>
+          <div class="form-row">
+            <label>Price ($)<input id="form-price" type="number" min="0" step="0.01" required placeholder="35.00" /></label>
+            <label>Available hens<input id="form-stock" type="number" min="0" step="1" required value="1" /></label>
+          </div>
+          <label>Photo URL<input id="form-image" type="url" placeholder="https://..." /></label>
+          <label>About this hen<textarea id="form-description" required rows="3" placeholder="A little about her personality..."></textarea></label>
+          <label>Characteristics<input id="form-traits" maxlength="100" placeholder="Friendly, cold-hardy, great layer" /></label>
+          <div class="form-actions"><button class="button button-dark" id="save-product" type="submit">Add to flock <span>↗</span></button><button class="text-button cancel-edit" id="cancel-edit" type="button" hidden>Cancel</button></div>
+        </form>
+        <div class="admin-inventory"><h3>Current flock <span id="inventory-count"></span></h3><div id="inventory-list"></div></div>
+      </div>
+    </section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
